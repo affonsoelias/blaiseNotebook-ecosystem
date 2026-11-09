@@ -1,0 +1,25 @@
+# Free Pascal / Lazarus Binaries & Objects
+*.o
+*.ppu
+*.a
+*.exe
+*.dll
+*.so
+*.dylib
+*.dbg
+*.compiled
+
+# OS / Editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Distribution archives
+dist/
+*.zip
+*.tar.gz
+
+# Node / Scratch
+node_modules/
+scratch/

@@ -1,0 +1,10 @@
+{
+  "name": "extension_template",
+  "version": "1.0.0",
+  "description": "Standard template and boilerplate for BlaiseNotebook ecosystem packages",
+  "author": "Community Contributor",
+  "license": "MIT",
+  "main": "uExtensionTemplate.pas",
+  "keywords": ["template", "blaisenotebook", "ecosystem"],
+  "homepage": "https://github.com/affonsoelias/blaiseNotebook-ecosystem"
+}

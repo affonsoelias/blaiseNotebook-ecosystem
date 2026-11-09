@@ -1,0 +1,1 @@
+# Add Python pip dependencies here if needed (e.g. numpy>=2.0.0)

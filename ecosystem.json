@@ -1,0 +1,15 @@
+{
+  "name": "blaiseNotebook-ecosystem",
+  "description": "Official community ecosystem and library registry for BlaiseNotebook",
+  "version": "1.0.0",
+  "repository": "https://github.com/affonsoelias/blaiseNotebook-ecosystem",
+  "packages": {
+    "test": {
+      "name": "test",
+      "description": "Test verification package for BlaiseNotebook ecosystem",
+      "latest": "1.0.0",
+      "versions": ["1.0.0"],
+      "download": "https://github.com/affonsoelias/blaiseNotebook-ecosystem/releases/download/{tag}/{package}-{version}.zip"
+    }
+  }
+}

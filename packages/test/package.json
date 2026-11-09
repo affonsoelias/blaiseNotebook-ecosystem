@@ -1,0 +1,10 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "Test verification package for BlaiseNotebook ecosystem",
+  "author": "BlaiseNotebook Team",
+  "license": "Modified LGPL v2.1 with Static Linking Exception",
+  "main": "uTestPackage.pas",
+  "keywords": ["test", "verification", "blaisenotebook"],
+  "homepage": "https://github.com/affonsoelias/blaiseNotebook-ecosystem/tree/main/packages/test"
+}
