@@ -13,17 +13,36 @@ bvnb pkg create my_extension
 ```
 
 This creates a new folder `./packages/my_extension/` with:
-- `uMyExtension.pas` (Starter Pascal unit with sample functions)
+- `uMy_extension.pas` (Starter Pascal unit with sample functions)
 - `package.json` (Pre-configured manifest)
 - `README.md` (Documentation starter)
 - `requirements.txt` (Empty template for Python dependencies)
-- `examples/demo.bynb` (Sample notebook demonstrating unit usage)
+- `doc/guide.md` (Optional extended markdown documentation)
+- `examples/demo_my_extension.bynb` (Sample notebook demonstrating unit usage)
 
 ---
 
-## 🧪 2. Developing & Testing Locally
+## 🛡️ 2. Official Package Name Reservation & Supply-Chain Protection
 
-1. Write your Pascal implementation in `uMyExtension.pas`.
+To prevent dependency confusion and namespace collisions, the following prefixes and names are **strictly reserved** for the official BlaiseNotebook distribution:
+
+* **Prefixes**: `bvnb-*`, `blaise-*`, `@bvnb/*`, `@blaise/*`
+* **Core & Kernel**: `core`, `kernel`, `runtime`, `std`, `bridge`
+* **Official Scientific Packages**: `math`, `pandas`, `sklearn`, `datascience`, `python_bridge`
+* **Official Tools**: `tools`, `data_generator`, `sdk`
+
+> [!WARNING]
+> Third-party community packages cannot use reserved prefixes or core names. The CLI will reject scaffolding via `bvnb pkg create` and Pull Requests with reserved names will be automatically closed.
+>
+> **Recommended Community Naming**:
+> - `my-math`, `fast-math`, `bio-tensor`
+> - `stats-pro`, `linear-algebra-toolkit`
+
+---
+
+## 🧪 3. Developing & Testing Locally
+
+1. Write your Pascal implementation in `uMy_extension.pas`.
 2. Start BlaiseNotebook in your workspace:
    ```bash
    bvnb run
@@ -33,17 +52,17 @@ This creates a new folder `./packages/my_extension/` with:
    ```pascal
    uses
      BlaiseOutput,
-     uMyExtension;
+     uMy_extension;
 
    begin
-     Writeln(MyExtensionHello());
+     Writeln(uMy_extensionInfo());
    end;
    ```
    The kernel compiler automatically resolves `./packages/my_extension/` and compiles seamlessly with zero setup!
 
 ---
 
-## 📦 3. Preparing a Release Archive
+## 📦 4. Preparing a Release Archive
 
 When your package is ready for distribution:
 1. Ensure `package.json` version is incremented (e.g. `1.0.0`).
@@ -55,7 +74,7 @@ When your package is ready for distribution:
 
 ---
 
-## 🚀 4. Publishing to `blaiseNotebook-ecosystem`
+## 🚀 5. Publishing to `blaiseNotebook-ecosystem`
 
 1. Fork the [`blaiseNotebook-ecosystem`](https://github.com/affonsoelias/blaiseNotebook-ecosystem) repository.
 2. Place your package directory in `packages/my_extension/`.
