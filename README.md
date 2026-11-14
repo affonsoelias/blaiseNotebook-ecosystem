@@ -26,35 +26,66 @@ Explore the comprehensive guides on consuming, developing, and publishing Blaise
 
 ## ⚡ Quick CLI Usage
 
-Inside your notebook workspace directory, use the `bvnb pkg` command:
+Inside your notebook workspace directory, use the `bvnb pkg` and `bvnb tools` commands:
 
+### 📦 Computational Packages (`bvnb pkg` | alias: `bvnb lib`)
 ```bash
-# 1. List installed packages (Core, Tools, and User/Third-Party):
+# List installed packages (Core, Scientific, and Workspace):
 bvnb pkg list
 
-# 2. Search for available packages in the ecosystem:
-bvnb pkg search
+# Search for available packages in the ecosystem:
+bvnb pkg search [query]
 
-# 3. Install latest version into current project:
+# View package information:
+bvnb pkg info test
+
+# Install latest version into current project (./packages/):
 bvnb pkg install test
 
-# 4. Install a pinned version:
-bvnb pkg install test@1.0.0
-
-# 5. Scaffold a new package:
+# Scaffold a new package:
 bvnb pkg create my-extension
 
-# 6. Remove an installed third-party package:
+# Remove an installed package:
 bvnb pkg remove test
+```
+
+### 🛠️ Developer & Auxiliary Tools (`bvnb tools` | alias: `bvnb tool`)
+```bash
+# List tools (Built-in and Workspace):
+bvnb tools list
+
+# Search for available tools in the ecosystem:
+bvnb tools search [query]
+
+# View tool details:
+bvnb tools info test-tool
+
+# Install tool into current project (./tools/):
+bvnb tools install test-tool
+
+# Run tool runner script directly:
+bvnb tools run test-tool hello world
+
+# Scaffold a new tool:
+bvnb tools create my-tool
+
+# Remove an installed tool:
+bvnb tools remove test-tool
 ```
 
 ---
 
-## 📦 Available Packages
+## 📦 Available Packages & Tools
 
+### Packages (`packages/`)
 | Package | Latest Version | Description | Package Link |
 |---|---|---|---|
 | `test` | `1.0.0` | Test verification and self-test package for the registry | [packages/test](packages/test) |
+
+### Tools (`tools/`)
+| Tool | Latest Version | Classification | Description | Tool Link |
+|---|---|---|---|---|
+| `test-tool` | `1.0.0` | `[Co-Official]` | Verification and testing tool for the BlaiseNotebook ecosystem | [tools/test-tool](tools/test-tool) |
 
 ---
 

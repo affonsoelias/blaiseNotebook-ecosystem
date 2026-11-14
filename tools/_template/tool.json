@@ -1,0 +1,11 @@
+{
+  "name": "tool-template",
+  "version": "1.0.0",
+  "category": "Developer Tool",
+  "description": "Template for BlaiseNotebook developer and auxiliary tools",
+  "author": "BlaiseNotebook Community",
+  "license": "MIT",
+  "type": "co-official",
+  "unit": "uToolTemplate.pas",
+  "bin": "run.py"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "test-tool",
+  "version": "1.0.0",
+  "category": "Ecosystem Verification",
+  "description": "Verification and testing tool for the BlaiseNotebook ecosystem",
+  "author": "BlaiseNotebook Core Team",
+  "license": "MIT",
+  "type": "co-official",
+  "unit": "uTestTool.pas",
+  "bin": "run.py"
+}
